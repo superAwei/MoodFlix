@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodFlix - 讓電影陪伴你的每一刻心情</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;700&family=Lora&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MOODFLIX</h1>
+            <p>讓電影陪伴你的每一刻心情</p>
+        </header>
+        <main>
+            <section id="mood-input">
+                <form id="mood-form" class="search-container">
+                    <input type="text" id="mood-description" placeholder="描述你現在的心情或最近發生的事...">
+                    <button type="submit" id="find-movies">推薦電影</button>
+                </form>
+                <div id="mood-tags">
+                    <button class="mood-tag" data-mood="放鬆">放鬆</button>
+                    <button class="mood-tag" data-mood="開心">開心</button>
+                    <button class="mood-tag" data-mood="悲傷">悲傷</button>
+                    <button class="mood-tag" data-mood="孤獨">孤獨</button>
+                    <button class="mood-tag" data-mood="浪漫">浪漫</button>
+                    <button class="mood-tag" data-mood="疲倦">疲倦</button>
+                    <button class="mood-tag" data-mood="無聊">無聊</button>
+                    <button class="mood-tag" data-mood="焦慮">焦慮</button>
+                    <button class="mood-tag" data-mood="興奮">興奮</button>
+                    <button class="mood-tag" data-mood="憤怒">憤怒</button>
+                    <button class="mood-tag" data-mood="懷舊">懷舊</button>
+                    <button class="mood-tag" data-mood="驚恐">驚恐</button>
+                    <button class="mood-tag" data-mood="沮喪">沮喪</button>
+                    <button class="mood-tag" data-mood="平靜">平靜</button>
+                </div>
+            </section>
+            <section id="movie-recommendations">
+                <!-- 電影推薦將在這裡動態生成 -->
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
